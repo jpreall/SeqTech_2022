@@ -19,19 +19,20 @@ This tutorial will be a guide through the first few steps of primary data analys
 <img src="https://citeseq.files.wordpress.com/2018/02/cell_hashing.png" width="700">
 
 
-XXXXXXXXX
-[Wet Lab Protocol](https://www.dropbox.com/s/mitbrqaxtgbavgo/SeqTech_2022_SingCell_protocol.docx?dl=0)
+XXXXXXXXX  
 
-In the lab, the groups prepared some 10X Genomics 3' Gene Expression libraries. We attempted to prepare 4 samples: 2 replicates each of treatment vs control.  Only one replicate of each passed QC during sample preparation, so we have a total of 2 sequenced datasets to analyze.
+[Wet Lab Protocol](https://www.dropbox.com/s/mitbrqaxtgbavgo/SeqTech_2022_SingCell_protocol.docx?dl=0)  
+For the scRNA-seq portion, we ran a simple experiment that will explore changes in gene expression as a function of cell culture density. Two different human cervical cancer lines, HeLa and Siha, were plated in 6-well format on Friday spanning a wide range of densities.  On Tuesday morning before the lab, we inspected these cultures and identified wells that roughly corresponded to a desirable range of confluencies (33%, 66%, 100%).  During lecture, we trypsinized these wells to produce a single-cell suspension.
 
-| Cell Line | Seeding Density | Confluency | Hash Tag |
-| --------- | :-------------: | :--------: | :------: |
-|HeLa       | 25              | 33         | 1        |
-|HeLa       | 50              | 66         | 2        |
-|HeLa       | 150             | 100        | 3        |
-|Siha       | 25              | 33         | 4        |
-|Siha       | 75              | 66         | 5        |
-|Siha       | 200             | 100        | 6        |
+
+| Cell Line | Cells seeded    | Confluency% | Hash Tag |
+| --------- | :-------------: | :--------:  | :------: |
+|HeLa       | 25k             | 33          | 1        |
+|HeLa       | 50k             | 66          | 2        |
+|HeLa       | 150k            | 100         | 3        |
+|Siha       | 25k             | 33          | 4        |
+|Siha       | 75k             | 66          | 5        |
+|Siha       | 200k            | 100         | 6        |
 
 XXXXXXXXX
 
