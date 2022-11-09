@@ -1,9 +1,9 @@
-# FTPS_2022
-## CSHL Plant Science Course, Single Cell Lectures, 2022
+# SeqTech_2022
+## CSHL Advanced Sequencing Technologies Course, Single Cell Dry Lab, 2022
 
-### [Link to pre-baked data](https://www.dropbox.com/s/izwly580v4r0nvc/FTPS22_data.tar.gz?dl=1) (637MB .tar.gz file)
+### [Link to pre-baked data](DUMMY LINK) (XXXMB .tar.gz file)
 
-### [Lecture Slides](https://www.dropbox.com/s/vezs9ppkwpudg97/Preall_FTPS22.pptx?dl=0) (158MB .pptx file)
+### [Lecture Slides](https://www.dropbox.com/s/t1u9mogpsmjggjh/Preall_SeqTech_2022.pptx?dl=0) (112MB .pptx file)
 -------
 
 This tutorial will be a guide through the first few steps of primary data analysis:
@@ -13,13 +13,15 @@ This tutorial will be a guide through the first few steps of primary data analys
 4. [Combining two samples into a shared, normalized matrix with `cellranger aggr`](#section4)
 
 -------
-## Single Cell Lab: Demonstration Experiment
+## Single Cell Lab: Cell Hashing
+[Cell Hashing Description](https://cite-seq.com/cell-hashing/)
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Root-tip-tag.png/440px-Root-tip-tag.png" width="300">
+<img src="https://citeseq.files.wordpress.com/2018/02/cell_hashing.png" width="700">
 
-**Root Meristem**
 
+XXXXXXXXX
 In the lab, the groups prepared some 10X Genomics 3' Gene Expression libraries. We attempted to prepare 4 samples: 2 replicates each of treatment vs control.  Only one replicate of each passed QC during sample preparation, so we have a total of 2 sequenced datasets to analyze.
+XXXXXXXXX
 
 **cDNA Quality Control**
 After the cDNA amplification step, we always check libraries on a BioAnalyzer or Tapestation
