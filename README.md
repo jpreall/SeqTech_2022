@@ -13,7 +13,7 @@ This tutorial will be a guide through the first few steps of primary data analys
 4. [Combining two samples into a shared, normalized matrix with `cellranger aggr`](#section4)
 
 -------
-## Single Cell Lab: Cell Hashing
+## Single Cell Lab, Experiment A: Single-Cell RNAseq with Cell Hashing
 [Cell Hashing Description](https://cite-seq.com/cell-hashing/)
 
 <img src="https://citeseq.files.wordpress.com/2018/02/cell_hashing.png" width="700">
@@ -21,6 +21,16 @@ This tutorial will be a guide through the first few steps of primary data analys
 
 XXXXXXXXX
 In the lab, the groups prepared some 10X Genomics 3' Gene Expression libraries. We attempted to prepare 4 samples: 2 replicates each of treatment vs control.  Only one replicate of each passed QC during sample preparation, so we have a total of 2 sequenced datasets to analyze.
+
+| Cell Line | Seeding Density | Confluency | Hash Tag |
+| --------- | :-------------: | :--------: | :------: |
+|HeLa       | 25              | 33         | 1        |
+|HeLa       | 50              | 66         | 2        |
+|HeLa       | 150             | 100        | 3        |
+|Siha       | 25              | 33         | 4        |
+|Siha       | 75              | 66         | 5        |
+|Siha       | 200             | 100        | 6        |
+
 XXXXXXXXX
 
 **cDNA Quality Control**
