@@ -20,6 +20,8 @@ This tutorial will be a guide through the first few steps of primary data analys
 
 
 XXXXXXXXX
+[Wet Lab Protocol](https://www.dropbox.com/s/mitbrqaxtgbavgo/SeqTech_2022_SingCell_protocol.docx?dl=0)
+
 In the lab, the groups prepared some 10X Genomics 3' Gene Expression libraries. We attempted to prepare 4 samples: 2 replicates each of treatment vs control.  Only one replicate of each passed QC during sample preparation, so we have a total of 2 sequenced datasets to analyze.
 
 | Cell Line | Seeding Density | Confluency | Hash Tag |
