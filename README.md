@@ -94,7 +94,7 @@ A sample sheet tells the FASTQ generation pipeline how to break the reads out in
 ```bash
 [Header],,,,,,,
 IEMFileVersion,4,,,,,,
-Date,7/15/22,,,,,,
+Date,11/11/22,,,,,,
 Workflow,GenerateFASTQ,,,,,,
 Application,NextSeq FASTQ Only,,,,,,
 Assay,TruSeq HT,,,,,,
@@ -108,8 +108,8 @@ Chemistry,Amplicon,,,,,,
 ,,,,,,,
 [Data],,,:,,,,
 Sample_ID,Sample_Name,Sample_Plate,Sample_Well,I7_Index_ID,index,Sample_Project,Description
-300180,FTPS22_Control,,,SI-TT-A9,SI-TT-A9,FTPS22,
-300183,FTPS22_Control,,,SI-TT-A10,SI-TT-A10,FTPS22,
+300181,SeqTech22_RNA_lane1,,,SI-TT-A9,SI-TT-A9,SeqTech22,
+300182,SeqTech22_RNA_lane2,,,SI-TT-A10,SI-TT-A10,SeqTech22,
 ```
 
 ### Dual-indexed libraries
@@ -258,9 +258,8 @@ Here is how to run Cellranger in local mode, if you have only a single workstati
 ```bash
 #!/bin/sh
 
-SAMPLE=FTPS22_Ctrl
-TRANSCRIPTOME=/seq/CellRanger/references/Zea_Mays_v3_Mar2019
-
+SAMPLE=SeqTech22_RNA_lane1
+TRANSCRIPTOME=/path/to/CellRanger/references/refdata-gex-GRCh38-2020-A
 
 cellranger count \
   --id=$SAMPLE \
@@ -363,17 +362,19 @@ First, tell cellranger which samples to aggregate by creating an aggr.csv file f
 
 ```bash
 sample_id,molecule_h5
-FTPS22_Ctrl,/fake/path/FTPS22/count/FTPS22_Ctrl/outs/molecule_info.h5
-FTPS22_Treat,/fake/path/FTPS22/count/FTPS22_Treat/outs/molecule_info.h5
+SeqTech22_RNA_lane1,/fake/path/SeqTech22/count/SeqTech22_RNA_lane1/outs/molecule_info.h5
+SeqTech22_RNA_lane2,/fake/path/SeqTech22/count/SeqTech22_RNA_lane2/outs/molecule_info.h5
 ```
 `cellranger aggregate` uses the `molecule_info.h5` file as the primary data source to do its downsampling.  This file contains rich data about each unique cDNA detected, including the number of duplicated or redundant reads mapping to a common UMI.  It is cleaner to downsample sequencing data based on this data rather than a simplified count matrix, which has discarded any information about the library complexity, PCR duplications, etc.  Cellranger uses this richer data source, but other tools seem to work with the final count matrix just fine.  Again, don't ask a bioinformation about it if you have children to feed some time today.
 
 #### Run cellranger aggr:
 
 ```bash
-cellranger aggr --id=FTPS22 \
+PROJECTDIR=/fake/path/SeqTech22/
+
+cellranger aggr --id=SeqTech22 \
 	--jobmode=local \
-	--csv=$BASEDIR/aggr.csv \
+	--csv=$PROJECTDIR/aggr.csv \
 	--normalize=mapped \
 	--localcores=16 \
 	--localmem=64 
