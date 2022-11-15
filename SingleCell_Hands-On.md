@@ -1,5 +1,5 @@
 ### CSHL 2022 Advanced Sequencing Technologies  Course Materials
-# Configuring your cloud instance for Scanpy 
+# Configuring your lab computer for Scanpy 
 -------
 
 ### 1. Create a new Conda environment for Scanpy analysis
