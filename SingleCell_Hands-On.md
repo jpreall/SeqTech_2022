@@ -1,7 +1,8 @@
 ### CSHL 2022 Advanced Sequencing Technologies  Course Materials
 
 # Loupe interactive demo
-[Mediocre PBMC data from SeqTech2017](https://www.dropbox.com/sh/qksaunln69yrqd1/AAAKLZ4E-yyfhb5-eYSnvnnZa?dl=0)
+[Mediocre PBMC data from SeqTech2017](https://www.dropbox.com/sh/qksaunln69yrqd1/AAAKLZ4E-yyfhb5-eYSnvnnZa?dl=0)  
+[CRISPR KO A549 Dataset from 10X](https://www.dropbox.com/sh/z0h8nszrxcgjigx/AAD4Mgm_4-XNunVgT8tUdoBma?dl=0)
 
 # Configuring your lab computer for Scanpy 
 -------
