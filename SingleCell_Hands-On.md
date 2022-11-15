@@ -13,7 +13,7 @@ conda install -c bioconda gtfparse harmony-pytorch
 ```
 
 ### 2. Grab the data folder from Dropbox:
-[Data Folder](https://www.dropbox.com/t/0nf8d4Wx48pCQpj7)
+[Data Folder](https://www.dropbox.com/t/0nf8d4Wx48pCQpj7)  
 Save this to your desktop
 
 ### 3. Launch the notebook
