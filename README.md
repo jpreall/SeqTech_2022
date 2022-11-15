@@ -4,6 +4,7 @@
 ### [Link to pre-baked data](DUMMY LINK) (XXXMB .tar.gz file)
 
 ### [Lecture Slides](https://www.dropbox.com/s/t1u9mogpsmjggjh/Preall_SeqTech_2022.pptx?dl=0) (112MB .pptx file)
+### [Lecture Slides: Intro to scRNA-seq Analysis](https://www.dropbox.com/s/edkr5lgsbtscylp/Intro_to_scRNAseq.pptx?dl=0) (36MB .pptx file)
 -------
 
 This tutorial will be a guide through the first few steps of primary data analysis:
