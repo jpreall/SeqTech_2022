@@ -2,7 +2,7 @@
 # Configuring your cloud instance for Scanpy 
 -------
 
-###1. Create a new Conda environment for Scanpy analysis
+### 1. Create a new Conda environment for Scanpy analysis
 
 Open Terminal:
 ```bash
@@ -12,11 +12,11 @@ conda install jupyter
 conda install -c bioconda gtfparse harmony-pytorch
 ```
 
-###2. Grab the data folder from Dropbox:
+### 2. Grab the data folder from Dropbox:
 [LINK TO DROPBOX TRANSFER](https:FIXME)  
 Save this to your desktop
 
-###3. Launch the notebook
+### 3. Launch the notebook
 ```bash
 cd ~/Desktop/
 jupyter notebook SeqTech22_Data_Exploration.ipynb
