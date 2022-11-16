@@ -26,7 +26,7 @@ wget http://34.224.25.10/workspace/SeqTech22_Data_Exploration.ipynb
 ```
 Download the data we will be exploring:
 ```bash
-wget https://www.dropbox.com/s/6c1nw4orxodv33t/data.tar.gz
+wget http://34.224.25.10/workspace/data.tar.gz
 tar -zxvf data.tar.gz
 ```
 Relevant XKCD:  
