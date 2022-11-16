@@ -22,7 +22,7 @@ cd workspace
 
 Download the Jupyter Notebook we will be walking through:
 ```bash
-https://www.dropbox.com/s/42as81uewm3mpjn/SeqTech22_Data_Exploration.ipynb
+wget https://www.dropbox.com/s/42as81uewm3mpjn/SeqTech22_Data_Exploration.ipynb
 ```
 Download the data we will be exploring:
 ```bash
