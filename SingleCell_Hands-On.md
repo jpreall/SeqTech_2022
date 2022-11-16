@@ -18,5 +18,13 @@ pip install 'scanpy[leiden]'
 pip install harmony-pytorch gtfparse scrublet
 
 cd workspace
-wget https://www.dropbox.com/s/6c1nw4orxodv33t/
+```
+
+Download the Jupyter Notebook we will be walking through:
+```bash
+https://www.dropbox.com/s/42as81uewm3mpjn/SeqTech22_Data_Exploration.ipynb
+```
+Download the data we will be exploring:
+```bash
+wget https://www.dropbox.com/s/6c1nw4orxodv33t/Nov16.tar.gz
 ```
