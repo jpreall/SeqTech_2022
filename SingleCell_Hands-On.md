@@ -12,8 +12,8 @@
 
 ### Running Scanpy in your AWS instance
 
-```bash
 In JupyerLab: File -> New -> Terminal
+```bash
 pip install 'scanpy[leiden]'
 pip install harmony-pytorch gtfparse scrublet
 
