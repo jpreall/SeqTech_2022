@@ -29,5 +29,6 @@ Download the data we will be exploring:
 wget https://www.dropbox.com/s/6c1nw4orxodv33t/Nov16.tar.gz
 tar -zxvf Nov16.tar.gz
 ```
-Relevant XKCD:
+Relevant XKCD:  
+
 <img src='https://imgs.xkcd.com/comics/tar.png'>
