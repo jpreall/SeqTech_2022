@@ -26,8 +26,8 @@ wget https://www.dropbox.com/s/42as81uewm3mpjn/SeqTech22_Data_Exploration.ipynb
 ```
 Download the data we will be exploring:
 ```bash
-wget https://www.dropbox.com/s/6c1nw4orxodv33t/Nov16.tar.gz
-tar -zxvf Nov16.tar.gz
+wget https://www.dropbox.com/s/6c1nw4orxodv33t/data.tar.gz
+tar -zxvf data.tar.gz
 ```
 Relevant XKCD:  
 
