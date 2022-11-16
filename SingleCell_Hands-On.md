@@ -22,11 +22,12 @@ cd workspace
 
 Download the Jupyter Notebook we will be walking through:
 ```bash
-wget http://34.224.25.10/workspace/SeqTech22_Data_Exploration.ipynb
+JP="54.210.32.202"
+wget http://$JP/workspace/SeqTech22_Data_Exploration.ipynb
 ```
 Download the data we will be exploring:
 ```bash
-wget http://34.224.25.10/workspace/data.tar.gz
+wget http://$JP/workspace/data.tar.gz
 tar -zxvf data.tar.gz
 ```
 Relevant XKCD:  
