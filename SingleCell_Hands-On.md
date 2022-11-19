@@ -36,6 +36,9 @@ tar -zxvf data.tar.gz
 ```bash
 wget http://$JP/workspace/RNA.tar.gz
 tar -zxvf RNA.tar.gz
+
+wget http://$JP/workspace/Multiome.tar.gz
+tar -zxvf Multiome.tar.gz
 ```
 
 Relevant XKCD:  
