@@ -41,6 +41,9 @@ wget http://$JP/workspace/Multiome.tar.gz
 tar -zxvf Multiome.tar.gz
 ```
 
+<a href='https://www.dropbox.com/s/bsexo6hfbretmaj/cloupe.cloupe?dl=0'> Multiome Loupe File</a>: (Warning: really crappy data ahead)
+
+
 Relevant XKCD:  
 
 <img src='https://imgs.xkcd.com/comics/tar.png'>
