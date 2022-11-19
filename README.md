@@ -44,6 +44,31 @@ Hash tags (a.k.a. Antibody-derived tags, or ADTs) were amplified in parallel, qu
 
 To demulitiplex, we are going to use 10X's built-in pipeline, designed for their cholesterol-modified oligo hash tagging system called <a href=https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cellplex>Cellplex</a>
 
+Cell Ranger 'count' doesn't support this natively, so we need to use a newer Cell Ranger function called 'multi'
+
+```bash
+[gene-expression],,,,,
+reference,/seq/CellRanger/references/refdata-gex-GRCh38-2020-A,,,,
+cmo-set,/mnt/grid/scc/data/Preall/SeqTech22/gex/hash_feature_barcodes.csv,,,,
+expect-cells,12000,,,,
+,,,,,
+[libraries],,,,,
+fastq_id,fastqs,lanes,physical_library_id,feature_types,subsample_rate
+SeqTech22_RNA_10k,/mnt/grid/ngs/data/Elzar_Illumina/Illumina_runs/221114_VH00553_137_AAATLNYHV/AAATLNYHV/outs/fastq_path/SeqTech22/311810,any,SeqTech22_RNA_10k,gene expression,
+SeqTech22_RNA_10k_ADT,/mnt/grid/ngs/data/Elzar_Illumina/Illumina_runs/221114_VH00553_137_AAATLNYHV/Data/Intensities/BaseCalls/311815/311813/,any,SeqTech22_RNA_10k_ADT,Multiplexing Capture,
+SeqTech22_RNA_10k_ADT,/mnt/grid/ngs/data/Elzar_Illumina/Preall_Lab/221114_NB551387_0784_AHCYJJBGXN/311817/,any,SeqTech22_RNA_10k_ADT,Multiplexing Capture,
+
+,,,,,
+[samples],,,,,
+sample_id,cmo_ids,description,,,
+SeqTech22_10k_Hash1,Hash_1
+SeqTech22_10k_Hash2,Hash_2
+SeqTech22_10k_Hash3,Hash_3
+SeqTech22_10k_Hash4,Hash_4
+SeqTech22_10k_Hash5,Hash_5
+SeqTech22_Hash6,Hash_6
+```
+
 ### Demultiplexing
 <img src=https://support.10xgenomics.com/img/multi_config_csv_expt_diagrams/multi_config_csv_gex_cmo.png align=left width=400>
 
