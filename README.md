@@ -18,9 +18,6 @@ This tutorial will be a guide through the first few steps of primary data analys
 
 <img src="https://citeseq.files.wordpress.com/2018/02/cell_hashing.png" width="700">
 
-
-XXXXXXXXX  
-
 [Wet Lab Protocol](https://www.dropbox.com/s/mitbrqaxtgbavgo/SeqTech_2022_SingCell_protocol.docx?dl=0)  
 For the scRNA-seq portion, we ran a simple experiment that will explore changes in gene expression as a function of cell culture density. Two different human cervical cancer lines, HeLa and Siha, were plated in 6-well format on Friday spanning a wide range of densities.  On Tuesday morning before the lab, we inspected these cultures and identified wells that roughly corresponded to a desirable range of confluencies (33%, 66%, 100%).  During lecture, we trypsinized these wells to produce a single-cell suspension.
 
@@ -41,12 +38,10 @@ Libraries were prepared according to the 10X Genomics User Guide and loaded onto
 |---|---|---|---|
 |28bp|10bp|10bp|90bp|
 
-Let's dive in:
-
-### Illumina sequencing output
-*(This is taken care of for you this year.  But here is some useful information about this step anyway, in case it's ever your responsibility to do the FASTQ generation step.):*
+Hash tags (a.k.a. Antibody-derived tags, or ADTs) were amplified in parallel, quantified, and spiked in at 5% molarity compared with the GEX library.
 
 **Congratulations!  You didn't screw up an experiment.  Now you might have data.**
 
-<img src=https://support.10xgenomics.com/img/multi_config_csv_expt_diagrams/multi_config_csv_gex_cmo.png align=left width=200>
+### Demultiplexing
+<img src=https://support.10xgenomics.com/img/multi_config_csv_expt_diagrams/multi_config_csv_gex_cmo.png align=left width=400>
 
