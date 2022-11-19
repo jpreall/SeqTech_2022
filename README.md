@@ -44,7 +44,7 @@ Hash tags (a.k.a. Antibody-derived tags, or ADTs) were amplified in parallel, qu
 
 To demulitiplex, we are going to use 10X's built-in pipeline, designed for their cholesterol-modified oligo hash tagging system called <a href=https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cellplex>Cellplex</a>
 
-Cell Ranger 'count' doesn't support this natively, so we need to use a newer Cell Ranger function called 'multi'
+Cell Ranger `count` doesn't support this natively, so we need to use a newer Cell Ranger function called 'multi'
 
 ```bash
 [gene-expression],,,,,
