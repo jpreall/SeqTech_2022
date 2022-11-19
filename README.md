@@ -44,8 +44,15 @@ Hash tags (a.k.a. Antibody-derived tags, or ADTs) were amplified in parallel, qu
 
 To demulitiplex, we are going to use 10X's built-in pipeline, designed for their cholesterol-modified oligo hash tagging system called <a href=https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cellplex>Cellplex</a>
 
-Cell Ranger `count` doesn't support this natively, so we need to use a newer Cell Ranger function called 'multi'
+Cell Ranger `count` doesn't support this natively, so we need to use a newer Cell Ranger function called `multi`.  This pipeline also runs all the functionality of `count` to generate a GEX matrix, but also demuxes.  To configure it, you need to build a configuration file pointing to all the necessary paths for FASTQs, references, and hash tag information.
 
+```bash
+cellranger multi \
+  --id=SeqTech22_RNA_10k \
+  --csv=multiplex_config.csv
+```
+
+**multiplex_config.csv**
 ```bash
 [gene-expression],,,,,
 reference,/seq/CellRanger/references/refdata-gex-GRCh38-2020-A,,,,
@@ -67,6 +74,21 @@ SeqTech22_10k_Hash3,Hash_3
 SeqTech22_10k_Hash4,Hash_4
 SeqTech22_10k_Hash5,Hash_5
 SeqTech22_Hash6,Hash_6
+```
+
+**hash_feature_barcodes.csv**
+```bash
+id,name,read,pattern,sequence,feature_type
+Hash_1,Hash_1,R2,5PNNNNNNNNNN(BC)NNNNNNNNN,GTCAACTCTTTAGCG,Multiplexing Capture
+Hash_2,Hash_2,R2,5PNNNNNNNNNN(BC)NNNNNNNNN,TGATGGCCTATTGGG,Multiplexing Capture
+Hash_3,Hash_3,R2,5PNNNNNNNNNN(BC)NNNNNNNNN,TTCCGCCTCTCTTTG,Multiplexing Capture
+Hash_4,Hash_4,R2,5PNNNNNNNNNN(BC)NNNNNNNNN,AGTAAGTTCAGCGTA,Multiplexing Capture
+Hash_5,Hash_5,R2,5PNNNNNNNNNN(BC)NNNNNNNNN,AAGTATCGTTTCGCA,Multiplexing Capture
+Hash_6,Hash_6,R2,5PNNNNNNNNNN(BC)NNNNNNNNN,GGTTGCCAGATGTCA,Multiplexing Capture
+Hash_7,Hash_7,R2,5PNNNNNNNNNN(BC)NNNNNNNNN,TGTCTTTCCTGCCAG,Multiplexing Capture
+Hash_8,Hash_8,R2,5PNNNNNNNNNN(BC)NNNNNNNNN,CTCCTCTGCAATTAC,Multiplexing Capture
+Hash_9,Hash_9,R2,5PNNNNNNNNNN(BC)NNNNNNNNN,CAGTAGTCACGGTCA,Multiplexing Capture
+Hash_10,Hash_10,R2,5PNNNNNNNNNN(BC)NNNNNNNNN,ATTGACCCGCGTTAG,Multiplexing Capture
 ```
 
 ### Demultiplexing
