@@ -42,6 +42,28 @@ Hash tags (a.k.a. Antibody-derived tags, or ADTs) were amplified in parallel, qu
 
 **Congratulations!  You didn't screw up an experiment.  Now you might have data.**
 
+SeqTech22_RNA_12k_ADT_S1_I1_001.fastq.gz  
+```bash
+@VH00553:1:AAATMC5HV:1:1101:25957:1000 1:N:0:CCGTCACT
+CCGTCACT
++
+C-CCCCCC
+```
+SeqTech22_RNA_12k_ADT_S1_R1_001.fastq.gz  
+```bash
+@VH00553:1:AAATMC5HV:1:1101:25957:1000 1:N:0:CCGTCACT
+NGTGCAGGTTGACGTTCGATAGATGCGC
++
+#CCCCCCCC;CC;CCCCCCCCCCCCCCC
+```
+SeqTech22_RNA_12k_ADT_S1_R2_001.fastq.gz    
+
+```bash
+@VH00553:1:AAATMC5HV:1:1101:25957:1000 2:N:0:CCGTCACT
+TATTCCTACCAGTAAGTTCAGCGTAGTGTTTCGGGCTTGACGGCCGGGCCTCGCACGCGCNGCGNNNNNNNNNNNCNNNNNCNNNGNNCG
++
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCC-CCCCCCCC;C;CCC;CCCCCCCCC--C-CC#CCC###########C#####;###C##--
+
 ### Demultiplexing
 <img src=https://support.10xgenomics.com/img/multi_config_csv_expt_diagrams/multi_config_csv_gex_cmo.png align=left width=400>
 
