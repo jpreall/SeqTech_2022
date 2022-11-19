@@ -63,6 +63,7 @@ SeqTech22_RNA_12k_ADT_S1_R2_001.fastq.gz
 TATTCCTACCAGTAAGTTCAGCGTAGTGTTTCGGGCTTGACGGCCGGGCCTCGCACGCGCNGCGNNNNNNNNNNNCNNNNNCNNNGNNCG
 +
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCC-CCCCCCCC;C;CCC;CCCCCCCCC--C-CC#CCC###########C#####;###C##--
+```
 
 ### Demultiplexing
 <img src=https://support.10xgenomics.com/img/multi_config_csv_expt_diagrams/multi_config_csv_gex_cmo.png align=left width=400>
