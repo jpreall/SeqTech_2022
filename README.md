@@ -1,7 +1,6 @@
 # SeqTech_2022
 ## CSHL Advanced Sequencing Technologies Course, Single Cell Dry Lab, 2022
 
-### [Link to pre-baked data](DUMMY LINK) (XXXMB .tar.gz file)
 
 ### [Lecture Slides](https://www.dropbox.com/s/t1u9mogpsmjggjh/Preall_SeqTech_2022.pptx?dl=0) (112MB .pptx file)
 ### [Lecture Slides: Intro to scRNA-seq Analysis](https://www.dropbox.com/s/edkr5lgsbtscylp/Intro_to_scRNAseq.pptx?dl=0) (36MB .pptx file)
@@ -48,3 +47,6 @@ Let's dive in:
 *(This is taken care of for you this year.  But here is some useful information about this step anyway, in case it's ever your responsibility to do the FASTQ generation step.):*
 
 **Congratulations!  You didn't screw up an experiment.  Now you might have data.**
+
+<img src=https://support.10xgenomics.com/img/multi_config_csv_expt_diagrams/multi_config_csv_gex_cmo.png align=left width=200>
+
