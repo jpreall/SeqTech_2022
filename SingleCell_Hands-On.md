@@ -30,6 +30,14 @@ Download the data we will be exploring:
 wget http://$JP/workspace/data.tar.gz
 tar -zxvf data.tar.gz
 ```
+
+
+## November 20: scRNA-seq lab #2: reviewing the data generated in the lab:
+```bash
+wget http://$JP/workspace/RNA.tar.gz
+tar -zxvf RNA.tar.gz
+```
+
 Relevant XKCD:  
 
 <img src='https://imgs.xkcd.com/comics/tar.png'>
