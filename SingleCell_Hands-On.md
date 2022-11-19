@@ -22,7 +22,7 @@ cd workspace
 
 Download the Jupyter Notebook we will be walking through:
 ```bash
-JP="18.232.148.179"
+JP="3.91.233.168"
 wget http://$JP/workspace/SeqTech22_Data_Exploration.ipynb
 ```
 Download the data we will be exploring:
