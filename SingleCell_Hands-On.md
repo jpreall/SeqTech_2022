@@ -32,8 +32,9 @@ tar -zxvf data.tar.gz
 ```
 
 
-## November 20: scRNA-seq lab #2: reviewing the data generated in the lab:
+## November 19: scRNA-seq lab #2: reviewing the data generated in the lab:
 ```bash
+JP="3.91.233.168"
 wget http://$JP/workspace/RNA.tar.gz
 tar -zxvf RNA.tar.gz
 
